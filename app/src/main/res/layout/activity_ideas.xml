@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:useDefaultMargins="true"
+            android:padding="16dp"
+            android:elevation="6dp"
+            android:translationZ="6dp">
+
+            <!-- Jugos -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/item_background">
+
+                <ImageView
+                    android:id="@+id/jugos"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/jugo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Jugos"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Refrescantes jugos naturales de naranja, frutilla, mango y piña."
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Bebidas -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/item_background">
+
+                <ImageView
+                    android:id="@+id/bebidas"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bebida" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Bebidas"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Coca-Cola, Sprite, Fanta y otras gaseosas tradicionales."
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Piscola -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/item_background">
+
+                <ImageView
+                    android:id="@+id/vaso750"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/piscola" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Piscola"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Clásica mezcla de pisco con Coca-Cola, servida con hielo."
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Tropical -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/item_background">
+
+                <ImageView
+                    android:id="@+id/vaso1000"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tropical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Tropical"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Mezcla de vino blanco con Coca-Cola."
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Whiscola -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/item_background">
+
+                <ImageView
+                    android:id="@+id/otro1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/piscola" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Whiscola"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Whisky con Coca-Cola, servido frío con hielo."
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Black Cranberry -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/item_background">
+
+                <ImageView
+                    android:id="@+id/otro2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/blackcranberry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Black Cranberry"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Vodka con jugo de arándano y un toque de limón."
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Jote -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/item_background">
+
+                <ImageView
+                    android:id="@+id/otro3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/jote" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Jote"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Tradicional mezcla de vino tinto con Coca-Cola."
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Pisco con Blanca -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/item_background">
+
+                <ImageView
+                    android:id="@+id/otro4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/whitecola" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Whitecola"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Refrescante combinación de pisco con Sprite o bebida blanca."
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </GridLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

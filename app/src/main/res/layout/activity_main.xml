@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB">
+
+    <!-- Botones de ideas y historial -->
+    <Button
+        android:id="@+id/btnIdeas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ideas de Bebidas"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btnHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historial"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Botón tipo de vaso -->
+    <Button
+        android:id="@+id/btnVaso"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Tipos de Vasos"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#8A2BE2"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btnIdeas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Tamaño vaso -->
+    <EditText
+        android:id="@+id/etTamano"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Tamaño vaso (ml)"
+        android:inputType="number"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnVaso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Botón iniciar Dispensador -->
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="Iniciar Dispensador"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintTop_toBottomOf="@id/etTamano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Contenedor inferior para cajas de botellas -->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifDispensador"
+        android:layout_width="139dp"
+        android:layout_height="194dp"
+        android:src="@drawable/gifdispensador"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btnIniciar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:contentDescription="GIF Dispensador"/>
+
+    <LinearLayout
+        android:id="@+id/containerBotellas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp">
+
+        <!-- Columna Botella 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="32dp">
+
+            <EditText
+                android:id="@+id/etBotella1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="% Botella 1"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text"
+                android:textColor="@android:color/black"
+                android:padding="6dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBotella1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@android:color/holo_blue_light"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Columna Botella 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etBotella2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="% Botella 2"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text"
+                android:textColor="@android:color/black"
+                android:padding="6dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBotella2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@android:color/holo_red_light"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
