@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#87CEEB">
+    android:background="@drawable/bg_gradient">
     <!--  aqui podemos mostrar el logo de la aplicacion ,  tomas elige el logo porfavor y lo pones tu gracia  🥶 -->
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/logoImage"
